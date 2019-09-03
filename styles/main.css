@@ -9,14 +9,15 @@ body {
 	font-family: 'Inconsolata', monospace;
 	font-size: 20px;
 	font-weight: normal;
-	background-color: yellow;
-}
+	}
 
 /* this is a comment */
 
 #container {
 	width:500px;
 	margin: 0 auto;
+	background-color: yellow;
+
 }
 
 #exercises, #projects {
