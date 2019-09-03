@@ -1,7 +1,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	background-color:yellow;
+	
 }
 
 
@@ -9,6 +9,7 @@ body {
 	font-family: 'Inconsolata', monospace;
 	font-size: 20px;
 	font-weight: normal;
+	background-color:yellow;
 }
 
 /* this is a comment */
