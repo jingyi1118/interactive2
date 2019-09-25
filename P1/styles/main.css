@@ -1,0 +1,57 @@
+body{
+	background: white;
+	margin-top:20px;
+	margin-right:100px;
+	position: relative;
+	margin-left:500px;
+}
+#file{
+	width:60px;
+}
+#equal{
+	position: relative;
+	width:36px;
+	left:80px;
+	bottom:58px;
+}
+
+pre{
+    width:800px;
+}
+h1{
+	font-size: 36pt;
+	font-family: 'Special Elite', cursive;
+}
+h3{
+	font-size: 18pt;
+	font-family: 'Special Elite', cursive;
+	position: relative;
+	left:170px;
+	bottom:115px;
+}
+h5{
+	line-height: 18pt;
+	font-size: 14pt;
+	font-family: 'Special Elite', cursive;
+	width:500px ;
+	position:relative;
+    bottom:100px;
+    left:60px;
+}
+canvas {
+    bottom:0px;
+	background-color: gray;
+    position:fixed;
+    right: 880px;
+}
+
+.square {
+	width:50px;
+	height: 50px;
+	position: fixed;
+	z-index: 1000;
+	background: black;
+
+}
+
+
