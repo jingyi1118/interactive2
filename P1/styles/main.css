@@ -5,6 +5,7 @@ body{
 	position: relative;
 	margin-left:500px;
 }
+
 #file{
 	width:60px;
 }
@@ -15,9 +16,6 @@ body{
 	bottom:58px;
 }
 
-pre{
-    width:800px;
-}
 h1{
 	font-size: 36pt;
 	font-family: 'Special Elite', cursive;
@@ -25,9 +23,18 @@ h1{
 h3{
 	font-size: 18pt;
 	font-family: 'Special Elite', cursive;
-	position: relative;
-	left:170px;
-	bottom:115px;
+	position: absolute;
+    left: 170px;
+    top: 425px;
+}
+h4{
+	font-family: Courier;
+	font-style: normal;
+    font-size:8pt;
+    position:fixed;
+    right: 900px;
+    top:560px;
+    width:200px;
 }
 h5{
 	line-height: 18pt;
@@ -35,21 +42,30 @@ h5{
 	font-family: 'Special Elite', cursive;
 	width:500px ;
 	position:relative;
-    bottom:100px;
+    bottom:30px;
     left:60px;
 }
+h6{
+	position:relative;
+	font-size: 9pt;
+	font-family: 'Special Elite', cursive;
+	left:20px;
+	bottom:50px;
+}
 canvas {
-    bottom:0px;
+	height:500px;
+	width:200px;
+    bottom:100px;
 	background-color: gray;
     position:fixed;
-    right: 880px;
+    right: 900px;
 }
 
 .square {
 	width:50px;
 	height: 50px;
 	position: fixed;
-	z-index: 1000;
+	z-index: 2000;
 	background: black;
 
 }

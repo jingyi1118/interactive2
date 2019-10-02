@@ -9,15 +9,15 @@
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d");
 
-canvas.height = document.body.offsetHeight;
-canvas.width = 300;
+canvas.height = 500;
+canvas.width = 200;
 
 var parts = [],
     minSpawnTime = 40,
     lastTime = new Date().getTime(),
     maxLifeTime = Math.min(5000, (canvas.height/(1.5*60)*1000)),
-    emitterX = canvas.width / 2,
-    emitterY = canvas.height - 10,
+    emitterX = canvas.width / 2 - 20,
+    emitterY = 400,
     smokeImage = new Image();
 
 function spawn() {
@@ -93,10 +93,10 @@ smokeImage.onload = function () {
 window.onresize = resizeMe;
 window.onload = resizeMe;
 function resizeMe() {
-   canvas.height = document.body.offsetHeight;
+   // canvas.height = document.body.offsetHeight;
 }
 
-
+let pounds = document.querySelector('#pounds')
 
 function placeASquare(){
   let newSquare = document.createElement('div')
@@ -111,6 +111,13 @@ function placeASquare(){
 
   newSquare.style.transform = 'rotate(' + angle + 'deg)'
 
+  newSquare.onmouseup = function(){
+    
+    newSquare.parentElement.removeChild(newSquare)
+  }
+
+  
+pounds.innerText = Math.round(((pounds.innerText * 1) + Math.random()* 2) * 10)/10
 
   document.body.appendChild(newSquare)
 }
@@ -119,7 +126,7 @@ function placeASquare(){
 placeASquare();
 
 
-setInterval(placeASquare,5000)
+setInterval(placeASquare,7000)
 
 
 
