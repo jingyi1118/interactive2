@@ -74,4 +74,12 @@ canvas {
 
 }
 
-
+#citation {
+	color:gray;
+    position:relative;
+	font-size: 9pt;
+	font-family: 'Special Elite', cursive;
+	left:60px;
+	top:50px;
+	
+}
