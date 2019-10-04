@@ -60,7 +60,7 @@ canvas {
 	height:500px;
 	width:200px;
     bottom:100px;
-	background-color: gray;
+	background-color: lightgray;
     position:fixed;
     right: 900px;
 }
