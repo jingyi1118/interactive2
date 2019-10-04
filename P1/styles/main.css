@@ -17,6 +17,9 @@ body{
 }
 
 h1{
+	position: relative;
+	top:28px;
+	line-height: 40pt;
 	font-size: 36pt;
 	font-family: 'Special Elite', cursive;
 }
@@ -25,7 +28,7 @@ h3{
 	font-family: 'Special Elite', cursive;
 	position: absolute;
     left: 170px;
-    top: 425px;
+    top: 455px;
 }
 h4{
 	font-family: Courier;
@@ -37,7 +40,8 @@ h4{
     width:200px;
 }
 h5{
-	line-height: 18pt;
+	top:20px;
+	line-height: 22pt;
 	font-size: 14pt;
 	font-family: 'Special Elite', cursive;
 	width:500px ;
