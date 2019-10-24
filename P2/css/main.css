@@ -13,7 +13,11 @@
 
 }
 
-
+h4{
+    position:relative;
+    left:20px;
+    top:10px;
+}
 
 #middle {
     position: fixed;
@@ -24,10 +28,22 @@
 }
 
 #middle:hover {
-    transform: scaleX(0.4) rotate(360deg);
+    transform: scaleX(0.4) rotate(180deg);
     width: 400px;
 }
 
+
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 5s;
+  transition-property: transform;
+}
+.hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+  transform: rotate(30deg);
+}
 
 #small {
     position: fixed;
