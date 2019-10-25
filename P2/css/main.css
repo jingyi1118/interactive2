@@ -5,11 +5,12 @@
     top:50px;
     width: 500px;
     transform: scaleX(1);
+    transition-delay: 50ms;
 }
 
 #big:hover {
 /*    transform:rotate(10deg);*/
-    transform: scaleX(0.34);
+    transform: scaleX(0.54);
 
 }
 
@@ -32,6 +33,18 @@ h4{
     width: 400px;
 }
 
+#smaller {
+    position: relative;
+    left:100px;
+    bottom:200px;
+    width: 200px;
+    transform: scaleX(1) rotate(20deg);
+}
+
+#smaller:hover {
+    transform: scale(40) rotate(-180deg);
+    width: 400px;
+}
 
 .hvr-rotate {
   display: inline-block;
@@ -50,6 +63,7 @@ h4{
     left:550px;
     top:450px;
     width: 300px;
+    transform: scaleX(1) rotate(2deg);
 }
 
 #small:hover {
@@ -74,7 +88,7 @@ h4{
 #smallest {
     position: fixed;
     left:10px;
-    top:500px;
+    top:530px;
     width: 350px;
     transform: scaleX(.65) rotate(5deg);
 }
