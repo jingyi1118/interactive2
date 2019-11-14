@@ -1,0 +1,60 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: violet;
+       
+}
+#mirror{
+    position: fixed;
+    width:500px;
+    top:0px;
+    left:250px;
+}
+#ruby{
+    position: fixed;
+    width:280px;
+    bottom:190px;
+    left:357px;
+}
+#question{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    height: 80vh;
+    font-family: Marker Felt;
+    font-size: 40px;
+    background: purple;
+}
+#answer {
+  display:none;
+    font-size: 90px;
+        font-family: "Futura";
+}
+/* hidden message */
+@media (max-width: 1024px) {
+    body {
+        background: black;
+    }
+    #answer {
+            display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+                  text-align: center;
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        font-size: 95px;
+        font-family: "Futura";
+        font-weight: 10px;
+    }
+    #question {
+        display: none;
+    }
+}
