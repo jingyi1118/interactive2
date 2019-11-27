@@ -1,0 +1,126 @@
+body {
+  background-color:#F59457;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup {
+  font-family: 'Handlee', cursive;
+  top:55px;
+  font-size: 28px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  font-family: 'Handlee', cursive;
+  font-size: 18px;
+  visibility: hidden;
+  width: 260px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -130px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.grid-container {
+  width:90vw;
+  height:85vh;
+  display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    grid-template-rows: repeat(auto-fill, 175px);
+  position: absolute;
+  perspective:900px;
+  left: 45px;
+  top: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+      width: 140px;
+    height: 140px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.grid-item:hover .grid-item-inner {
+  transform: rotateY(180deg);
+}
+
+.grid-item-front, .grid-item-back {
+  position: absolute;
+    object-fit: cover;
+  backface-visibility: hidden;
+}
+
+.grid-item-front {
+  color: black;
+}
+
+
+.findme{
+            content: url(https://raw.githubusercontent.com/jingyi1118/interactive2/gh-pages/findme1.png);
+            position: relative;
+            float: left;
+            width: 140px;
+            height: 120px;
+            bottom: 175px;
+            left: 13px;
+  
+}
+
+.grid-item-back {
+  font-family: 'Handlee', cursive;
+  width: 140px;
+    height: 160px;
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.self1 {
+    width: 140px;
+    height: 160px;
+    object-fit: cover;
+}
+
