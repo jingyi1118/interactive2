@@ -4,44 +4,14 @@ body {
 }
 
 .popup {
-  font-family: 'Handlee', cursive;
-  top:55px;
-  font-size: 28px;
-  position: relative;
+  
+  z-index: 100000;
   display: inline-block;
   cursor: pointer;
   user-select: none;
 }
 
-/* The actual popup */
-.popup .popuptext {
-  font-family: 'Handlee', cursive;
-  font-size: 18px;
-  visibility: hidden;
-  width: 260px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -130px;
-}
 
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
 
 /* Toggle this class - hide and show the popup */
 .popup .show {
@@ -99,13 +69,24 @@ body {
 
 
 .findme{
-            content: url(https://raw.githubusercontent.com/jingyi1118/interactive2/gh-pages/findme1.png);
+            content: url(https://raw.githubusercontent.com/jingyi1118/interactive2/gh-pages/findme.png);
             position: relative;
             float: left;
-            width: 140px;
-            height: 120px;
-            bottom: 175px;
-            left: 13px;
+            width: 170px;
+            height: 125px;
+            bottom: 165px;
+            left: -6px;
+  
+}
+
+.clickme{
+            content: url(https://raw.githubusercontent.com/jingyi1118/interactive2/gh-pages/clickme.png);
+            position: absolute;
+            float: left;
+            width: 190px;
+            height: 125px;
+            bottom: 22px;
+            right: -48px;
   
 }
 
@@ -124,3 +105,24 @@ body {
     object-fit: cover;
 }
 
+.grid-item.fall {
+  transform:rotate(90deg)translate(46px, -40px);
+}
+
+#infoItem {
+  transition:transform 100ms ease;
+}
+
+#animation {
+  display:none;
+  width:600px;
+  z-index: 100000;
+  
+  position: absolute;
+  left: -170px;
+  bottom: 250px;
+  transform: rotate(-90deg);
+}
+.fall #animation {
+  display:block;
+}
