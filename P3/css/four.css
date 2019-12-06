@@ -2,7 +2,13 @@ body {
   background-color:#96B988;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+#video{
+  position: absolute;
+  transform:scale(1.0);
+  bottom: 216px;
+  right: 655px;
+  
+}
 
 .grid-container {
   width:95vw;
@@ -50,10 +56,10 @@ body {
             content: url(https://raw.githubusercontent.com/jingyi1118/interactive2/gh-pages/findme2.png);
             position: relative;
             float: left;
-            width: 50px;
-            height: 30px;
-            bottom: 110px;
-            left: 10px;
+            width: 100px;
+            height: 60px;
+            bottom: 95px;
+            left: 18px;
   
 }
 

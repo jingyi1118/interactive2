@@ -3,14 +3,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.title{
+    width:500px;
+    position:fixed;
+    bottom:-50px;
+    right: 280px;
+}
+
+.title2{
+    width:500px;
+    position:fixed;
+    top:20px;
+    right: -420px;
+}
+
 .findme{
-            content: url(https://raw.githubusercontent.com/jingyi1118/interactive2/gh-pages/findme1.png);
+            content: url(https://raw.githubusercontent.com/jingyi1118/interactive2/gh-pages/findme.png);
             position: relative;
             float: left;
-            width: 200px;
-            height: 170px;
-            bottom: 44px;
-            right: 16px;
+            width: 250px;
+            height: 180px;
+            bottom: 25px;
+            right: 53px;
   
 }
 
@@ -70,3 +84,36 @@ body {
     object-fit: cover;
 }
 
+/* .button {
+   position: absolute;
+   top: 540px;
+   left: 20px;
+   border: 20px;
+   background: transparent;
+   box-sizing: border-box;
+   width: 5px;
+   height: 10px;
+   border-color: transparent transparent transparent #385686;
+   transition: 100ms all ease;
+   cursor: pointer;
+   border-style: solid;
+   border-width: 12px 0 12px 20px;
+}
+ .button.paused {
+   border-style: double;
+   border-width: 0px 0 0px 60px;
+}
+ .button:hover {
+   border-color: transparent transparent transparent #385686;
+} */
+
+.clickme{
+            content: url(https://raw.githubusercontent.com/jingyi1118/interactive2/gh-pages/clickme.png);
+            position: absolute;
+            float: left;
+            width: 190px;
+            height: 125px;
+            bottom: 22px;
+            right: -48px;
+  
+}

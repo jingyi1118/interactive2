@@ -107,11 +107,34 @@ body {
 
 .grid-item.fall {
   transform:rotate(90deg)translate(46px, -40px);
+  animation: fadeIn 0.5s;
 }
 
 #infoItem {
   transition:transform 100ms ease;
 }
+
+@keyframes fadeIn {
+        0% {
+            transform: ritate(0deg)translate(46px, -40px);
+          }
+        45%{
+            transform: rotate(90deg)translate(46px, -40px);
+          }
+        55% {
+            transform: rotate(85deg)translate(46px, -40px);
+          }
+       
+        65% {
+            transform: rotate(90deg)translate(46px, -40px);
+          }
+        75% {
+            transform: rotate(85deg)translate(46px, -40px);
+          }
+        100% {
+            transform: rotate(90deg)translate(46px, -40px);   
+        }
+    }
 
 #animation {
   display:none;
