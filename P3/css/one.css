@@ -1,5 +1,5 @@
 body {
-  background-color:#EEA6C5;
+  background-color:#ECA6C4;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -86,14 +86,14 @@ body {
 
 .button {
    position: absolute;
-   top: 540px;
-   left: 20px;
+   top: -50px;
+   right: -11px;
    border: 20px;
    background: transparent;
    box-sizing: border-box;
-   width: 5px;
-   height: 10px;
-   border-color: transparent transparent transparent #385686;
+   width: 25px;
+   height: 25px;
+   border-color: transparent transparent transparent #7792C5;
    transition: 100ms all ease;
    cursor: pointer;
    border-style: solid;
@@ -101,9 +101,17 @@ body {
 }
  .button.paused {
    border-style: double;
-   border-width: 0px 0 0px 60px;
+   border-width: 0px 0 0px 20px;
 }
  .button:hover {
-   border-color: transparent transparent transparent #385686;
+   border-color: transparent transparent transparent #7792C5;
 }
 
+h3{
+  font-family: 'Patrick Hand SC', cursive;
+  font-size:18px;
+  color: #7792C5;
+  position:absolute;
+  left:460px;
+  top:130px;
+}
