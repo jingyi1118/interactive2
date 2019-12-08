@@ -76,4 +76,16 @@ body {
     height: 175px;
     object-fit: cover;
 }
+ #spin:hover{
+  animation: spining 0.5s infinite linear;
 
+ }
+
+ @keyframes spining {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
