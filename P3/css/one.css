@@ -84,7 +84,7 @@ body {
     object-fit: cover;
 }
 
-/* .button {
+.button {
    position: absolute;
    top: 540px;
    left: 20px;
@@ -105,15 +105,5 @@ body {
 }
  .button:hover {
    border-color: transparent transparent transparent #385686;
-} */
-
-.clickme{
-            content: url(https://raw.githubusercontent.com/jingyi1118/interactive2/gh-pages/clickme.png);
-            position: absolute;
-            float: left;
-            width: 190px;
-            height: 125px;
-            bottom: 22px;
-            right: -48px;
-  
 }
+
