@@ -89,3 +89,19 @@ body {
     transform: rotate(359deg);
   }
 }
+
+/* mobile */
+/*@media (max-width: 670px) {
+    body {
+        background: #E4BEE5;
+    }
+    #mobile {
+        display: inline;
+        color: black;
+    }
+    #desktop,
+    #tablet,
+    #print {
+        display: none;
+    }
+}*/

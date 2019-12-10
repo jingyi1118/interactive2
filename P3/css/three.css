@@ -126,6 +126,9 @@ body {
 
 #animation {
   display:none;
+  position:relative;
+  right:300px;
+  bottom:0px;
 }
 .fall #animation {
   display:block;
