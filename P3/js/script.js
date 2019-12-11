@@ -19,9 +19,4 @@ button.addEventListener('click',function(){
   
 })
 
-let video = document.querySelector('#video')
-
-video.addEventListener('click',function(){
-video.play()
-})
 
