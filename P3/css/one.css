@@ -3,6 +3,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#desktop {
+    display: inline;
+   
+}
+
+#tablet,
+#mobile,
+#print {
+    display: none;
+}
+
+
+
 .title{
     width:500px;
     position:fixed;
@@ -115,3 +128,101 @@ h3{
   left:460px;
   top:130px;
 }
+
+
+@media (max-width: 500px) {
+    body {
+        background: #ECA6C4;
+    }
+    #mobile {
+        display: inline;
+        color: black;
+    }
+    #desktop,
+    #tablet,
+    #print {
+        display: none;
+    }
+}
+
+.grid-container2 {
+  width:60vw;
+  height:60vh;
+  display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-rows: repeat(auto-fill, 100px);
+  position: absolute;
+  perspective:500px;
+  left: 100px;
+  top: 200px;
+  
+}
+
+.grid-item2 {
+      width: 100px;
+    height: 100px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item2-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.grid-item2:hover .grid-item2-inner {
+  transform: rotateY(180deg);
+}
+
+.grid-item2-front, .grid-item2-back {
+  position: absolute;
+    object-fit: cover;
+  backface-visibility: hidden;
+}
+
+.grid-item2-front {
+  color: black;
+}
+
+
+.grid-item2-back {
+  width: 100px;
+    height: 100px;
+  background-color: #F59457;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.self2 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.title3{
+    width:300px;
+    position:fixed;
+    bottom:290px;
+    right: 110px;
+}
+
+.title4{
+    width:300px;
+    position:fixed;
+    top:160px;
+    right: -80px;
+}
+
+h4{
+  font-family: 'Patrick Hand SC', cursive;
+  font-size:12px;
+  color: #7792C5;
+  position:absolute;
+  left:277px;
+  top:152px;
+  line-height: 10px;
+}
+
+
